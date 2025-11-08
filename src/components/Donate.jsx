@@ -5,30 +5,30 @@ import { HeartHandshake } from 'lucide-react';
 export default function Donate() {
   return (
     <section id="donate" className="relative bg-neutral-950 py-24 text-white">
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,rgba(255,93,93,0.2),transparent_60%)]" />
+      <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_top,rgba(34,211,238,0.16),transparent_60%)]" />
       <div className="relative mx-auto max-w-6xl px-6">
         <div className="mx-auto max-w-2xl text-center">
           <div className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm">
-            <HeartHandshake className="h-4 w-4" />
-            Support the mission
+            <HeartHandshake className="h-4 w-4 text-emerald-300" />
+            <span className="font-mono text-emerald-200">Support the mission</span>
           </div>
-          <h2 className="mt-6 text-3xl font-semibold tracking-tight md:text-4xl">
+          <h2 className="mt-6 font-mono text-3xl font-semibold tracking-tight md:text-4xl">
             Keep the tools free and the knowledge open
           </h2>
-          <p className="mt-3 text-neutral-300">
+          <p className="mt-3 font-mono text-sm text-emerald-200/80">
             Your donation funds open-source tools, research, and free education for the community.
           </p>
 
           <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
             <a
               href="#donate-now"
-              className="rounded-lg bg-white px-5 py-3 font-medium text-neutral-900 transition hover:bg-neutral-100"
+              className="rounded-lg border border-emerald-400/40 bg-emerald-400/10 px-5 py-3 font-mono text-sm text-emerald-200 transition hover:bg-emerald-400/15"
             >
               Donate now
             </a>
             <a
               href="#sponsor"
-              className="rounded-lg border border-white/20 bg-white/0 px-5 py-3 font-medium text-white transition hover:bg-white/10"
+              className="rounded-lg border border-cyan-400/40 bg-cyan-400/10 px-5 py-3 font-mono text-sm text-cyan-200 transition hover:bg-cyan-400/15"
             >
               Become a sponsor
             </a>
@@ -47,8 +47,8 @@ export default function Donate() {
               ['Community focus', 'Workshops, docs, and templates for all levels.']
             ].map(([title, desc]) => (
               <div key={title} className="rounded-xl border border-white/10 bg-white/5 p-4">
-                <h4 className="text-sm font-semibold">{title}</h4>
-                <p className="mt-1 text-sm text-neutral-300">{desc}</p>
+                <h4 className="font-mono text-sm font-semibold text-white">{title}</h4>
+                <p className="mt-1 font-mono text-xs text-emerald-200/80">{desc}</p>
               </div>
             ))}
           </motion.div>

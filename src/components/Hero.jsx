@@ -6,11 +6,11 @@ import { Shield } from 'lucide-react';
 export default function Hero() {
   return (
     <section className="relative h-[92vh] w-full overflow-hidden bg-neutral-950">
-      {/* 3D Cover */}
+      {/* 3D Cover - Matrix-like terminal background */}
       <div className="absolute inset-0">
-        <Spline scene="https://prod.spline.design/BL9Cjn3fkAdLBhXm/scene.splinecode" style={{ width: '100%', height: '100%' }} />
+        <Spline scene="https://prod.spline.design/xm1zyUmdIZRP4-d1/scene.splinecode" style={{ width: '100%', height: '100%' }} />
         {/* Dark gradient to improve contrast over the 3D scene. Ensure it doesn't block interaction. */}
-        <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-black/70 via-black/40 to-black/80" />
+        <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-black/80 via-black/40 to-black/80" />
       </div>
 
       {/* Headline and Actions */}
@@ -23,13 +23,13 @@ export default function Hero() {
         >
           <div className="inline-flex items-center gap-2 rounded-full border border-emerald-400/30 bg-emerald-400/10 px-4 py-2 text-xs font-medium text-emerald-300 backdrop-blur">
             <Shield className="h-4 w-4" />
-            Operator Mode
+            Terminal Online
           </div>
           <h1 className="mt-5 font-mono text-4xl font-semibold leading-tight tracking-tight text-white md:text-6xl">
-            Build, break, and ship in neon darkness
+            Live code stream, neon ops
           </h1>
           <p className="mt-4 max-w-2xl font-mono text-sm text-emerald-200/80 md:text-base">
-            A terminal-grade landing for hackers. Smooth motion, cyberpunk glow, and a focused toolkit for offensive and defensive ops.
+            Matrix-green binary motion meets a focused hacker console. Smooth typing vibes, cyberpunk glow, and tools ready for execution.
           </p>
           <div className="mt-8 flex flex-wrap gap-4">
             <a
